@@ -2,18 +2,15 @@ const searchInput = document.getElementById("searchInput")
 const searchIcon = document.getElementById("searchIcon")
 const menuToggle = document.getElementById("menu-toggle")
 const menu = document.getElementById("menu")
+const footerYear = document.querySelector(".footer__year")
 import Macy from "macy"
 
-// AOS.init()
+const handleCurrentYear = () => {
+	const year = new Date().getFullYear()
+	footerYear.innerText = year
+}
+handleCurrentYear()
 
-// $(document).ready(function () {
-// 	$(".magnific").magnificPopup({
-// 		type: "image",
-// 		gallery: {
-// 			enabled: true,
-// 		},
-// 	})
-// })
 
 menuToggle.addEventListener("click", () => {
 	if (window.innerWidth < 1024) {
@@ -80,10 +77,19 @@ document.getElementById("load-more").addEventListener("click", function () {
 		macyInstance.recalculate(true)
 	}
 })
+searchIcon.addEventListener("click", () => {
+	if (searchInput.classList.contains("w-0", "scale-x-0")) {
+		searchInput.classList.remove("scale-x-0", "opacity-0", "w-0")
+		searchInput.classList.add("w-40", "scale-x-100", "opacity-100")
+	} else {
+		searchInput.classList.remove("w-40", "scale-x-100", "opacity-100")
+		searchInput.classList.add("scale-x-0", "opacity-0", "w-0")
+	}
+})
 
-searchIcon.addEventListener("click", toggleSearchInput)
-menuIcon.addEventListener("click", toggleMenu)
-showMoreBtn.addEventListener("click", showMoreImages)
-window.addEventListener("resize", checkWindowSize)
+// searchInput.addEventListener("click", toggleSearchInput)
+// menuIcon.addEventListener("click", toggleMenu)
+// showMoreBtn.addEventListener("click", showMoreImages)
+// window.addEventListener("resize", checkWindowSize)
 
-checkWindowSize()
+// checkWindowSize()

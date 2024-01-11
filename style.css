@@ -10,6 +10,9 @@ html {
 	overflow-y: auto;
 	min-width: 100vw;
 }
+input{
+	background: transparent;
+}
 /* .macy-item img {
 	width: 100%;
 	display: block;
