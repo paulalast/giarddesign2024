@@ -11,20 +11,21 @@
 <body
   class="container flex flex-col bg-grey justify-center items-center text-black font-mainFont z-0 ">
   <div id="site" class="flex gap-10 flex-col items-center w-full ">
-    <nav class="fixed  justify-center w-screen py-4 bg-grey z-50">
+    <nav
+      class="fixed  justify-center w-screen py-2 md:py-4 bg-grey z-50 shadow-sm">
       <div class="container flex justify-between items-center">
         <div>
           <img src="./src/img/icons/giarddesign-logo.svg" alt="logo">
         </div>
-        <div class="flex items-center space-x-2 bg-grey z-10 text-sm ">
+        <div class="flex items-center space-x-2 bg-grey z-10 text-sm  ">
           <ul id="menu"
-            class="lg:flex  gap-6 max-lg:absolute max-lg:top-20 max-lg:bg-grey max-lg:right-0 max-lg:flex  max-lg:py-1 max-lg:flex-col max-lg:w-full max-lg:h-fit max-lg:shadow-lg max-lg:gap-4 max-lg:px-8 z-[0]">
+            class="lg:flex  gap-6 max-lg:absolute max-lg:top-16 max-lg:bg-grey max-lg:right-0 max-lg:flex  max-lg:py-1 max-lg:flex-col max-lg:w-full max-lg:h-fit max-lg:shadow-lg max-lg:gap-4 max-lg:px-8 z-[0]">
             <li id="show-more"
               class="flex items-center group hover:text-grey hover:bg-green duration-300 rounded-full py-1 px-3 max-lg:py-3">
               <a href="#" class="">Oferta</a>
-              <img src="./src/img/icons/arrow-down-black.svg" width="25px"
-                height="25px"
-                class="flex w-5 h-5 p-1 relative ml-2 object-scale-down max-lg:hidden"
+              <img src="./src/img/icons/arrow-down-black.svg" width="20px"
+                height="20px"
+                class="flex w-4 h-4 p-1 relative ml-2 object-scale-down max-lg:hidden"
                 alt="zjazd w dól">
               <ul
                 class="hidden absolute max-lg:group-hover:hidden  top-5 bg-green text-grey shadow-md py-6  group-hover:block rounded-xl mt-2">
@@ -69,7 +70,7 @@
             </li>
           </ul>
           <button id="menu-toggle"
-            class="lg:hidden flex w-12 hover:scale-105 duration-300">
+            class="lg:hidden flex w-9 hover:scale-105 duration-300">
             <img src="./src/img/icons/menu.png" alt="menu" width="48px"
               height="48px" class="w-full h-full object-cover">
           </button>
@@ -77,34 +78,34 @@
       </div>
     </nav>
     <header
-      class="container mx-auto w-screen  min-h-screen flex mt-24 md:mt-0   p-0 ">
+      class="container mx-auto w-screen  min-h-screen flex mt-4 sm:mt-2 md:mt-0  p-0 ">
       <!-- slider-container -->
       <div
-        class=" carousel carousel-center absolute left-0  md:h-full w-screen bg-grey ">
+        class=" carousel carousel-center absolute left-0 h-screen md:h-full w-screen bg-grey ">
 
         <!-- slide 1 -->
-        <div id="slide1" class="carousel-item relative w-full  ">
+        <div id="slide1" class="carousel-item relative w-full h-full ">
 
           <div
-            class="container flex w-screen  md:left-0 justify-center items-center flex-wrap flex-col md:flex-row gap-5 ">
+            class="container flex w-screen h-screen  md:left-0 justify-center items-center flex-wrap flex-col md:flex-row gap-5 ">
             <div
-              class="mx-2 flex flex-col justify-center flex-1 gap-10 h-full bg-grey">
-              <div class="flex flex-col gap-10 justify-center 
+              class="mx-2 flex flex-col justify-center flex-1 gap-10  h-1/4 md:h-full bg-grey ">
+              <div class="flex flex-col gap-10 justify-center  text-center md:text-left 
               ">
                 <h2
-                  class="lg:text-[60px] lg:leading-[70px] font-headerFont text-[40px] leading-tight drop-shadow-md">
-                  Nowoczesna <br>
-                  aranżacja <br>
-                  Twojego ogrodu </h2>
-                <p class="w-full xl:w-10/12 leading-[150%]">Marka GiardDesign to
+                  class="pt-14 lg:text-[60px] lg:leading-[70px] sm:text-[48px] font-headerFont text-[28px] leading-tight drop-shadow-md ">
+                  Artystyczne spojrzenie na naturę </h2>
+                <p
+                  class="w-full xl:w-10/12 leading-[150%] text-sm md:text-base">
+                  Marka GiardDesign to
                   wieloletnie
                   doświadczenie i
                   wysoka estetyka
                   realizacji. Oferujemy kompleksowy zakres usług z indywidualnym
                   podejściem do każdego projektu.</p>
               </div>
-              <div class="flex items-center gap-10 flex-col md:flex-row w-full lg:w-10/12
-              flex-wrap lg:flex-nowrap">
+              <div class="flex items-center gap-4 md:gap-10 flex-col md:flex-row w-full lg:w-10/12
+              flex-wrap lg:flex-nowrap text-sm md:text-base">
                 <button
                   class="rounded-[200px] bg-green py-3 px-6 text-grey border border-green max-xl:w-full hover:bg-beige hover:text-green hover:scale-105 duration-300 w-full "><a
                     href="#kontakt">Skontaktuj się z nami</a></button>
@@ -116,9 +117,9 @@
                     class="ml-2 group-hover:invert group-hover:rotate-45 "></button>
               </div>
             </div>
-            <div class="relative w-1/2"></div>
+            <div class="relative h-0 md:w-1/2"></div>
             <div
-              class="md:absolute  top-0 right-0 w-full md:w-1/2  md:h-full bg-slate-600">
+              class="md:absolute  top-0 right-0 w-full md:w-1/2  md:h-full h-1/3">
               <img src="./src/img/garden2.webp" alt="garden"
                 class="w-full h-full object-cover">
               <div class="flex absolute bottom-0 right-0  ">
@@ -131,19 +132,17 @@
           </div>
         </div>
         <!-- slide 2 -->
-        <div id="slide2" class="carousel-item relative w-full  ">
+        <div id="slide2" class="carousel-item relative w-full h-full ">
 
           <div
-            class="container flex w-screen  md:left-0 justify-center items-center flex-wrap flex-col md:flex-row gap-5 ">
+            class="container flex w-screen h-screen  md:left-0 justify-center items-center flex-wrap flex-col md:flex-row gap-5 ">
             <div
-              class="mx-2 flex flex-col justify-center flex-1 gap-10 h-full bg-grey">
-              <div class="flex flex-col gap-10 justify-center 
+              class="mx-2 flex flex-col justify-center flex-1 gap-10  h-1/4 md:h-full bg-grey ">
+              <div class="flex flex-col gap-10 justify-center  text-center md:text-left
               ">
                 <h2
-                  class="lg:text-[60px] lg:leading-[70px] font-headerFont text-[40px] leading-tight drop-shadow-md">
-                  Nowoczesna <br>
-                  aranżacja <br>
-                  Twojego ogrodu </h2>
+                  class="lg:text-[60px] lg:leading-[70px] sm:text-[48px] font-headerFont text-[36px] leading-tight drop-shadow-md mt-6">
+                  Zielona przestrzeń Twojego spokoju</h2>
                 <p class="w-full xl:w-10/12 leading-[150%]">Marka GiardDesign to
                   wieloletnie
                   doświadczenie i
@@ -151,7 +150,7 @@
                   realizacji. Oferujemy kompleksowy zakres usług z indywidualnym
                   podejściem do każdego projektu.</p>
               </div>
-              <div class="flex items-center gap-10 flex-col md:flex-row w-full lg:w-10/12
+              <div class="flex items-center gap-4 md:gap-10 flex-col md:flex-row w-full lg:w-10/12
               flex-wrap lg:flex-nowrap">
                 <button
                   class="rounded-[200px] bg-green py-3 px-6 text-grey border border-green max-xl:w-full hover:bg-beige hover:text-green hover:scale-105 duration-300 w-full "><a
@@ -164,9 +163,9 @@
                     class="ml-2 group-hover:invert group-hover:rotate-45 "></button>
               </div>
             </div>
-            <div class="relative w-1/2"></div>
+            <div class="relative h-0 md:w-1/2"></div>
             <div
-              class="md:absolute  top-0 right-0 w-full md:w-1/2  md:h-full bg-slate-600">
+              class="md:absolute  top-0 right-0 w-full md:w-1/2  md:h-full  h-1/3">
               <img src="./src/img/garden.webp" alt="garden"
                 class="w-full h-full object-cover">
               <div class="flex absolute bottom-0 right-0  ">
@@ -179,16 +178,17 @@
           </div>
         </div>
         <!-- slide3 -->
-        <div id="slide3" class="carousel-item relative w-full  ">
+
+        <div id="slide3" class="carousel-item relative w-full h-full ">
 
           <div
-            class="container flex w-screen  md:left-0 justify-center items-center flex-wrap flex-col md:flex-row gap-5 ">
+            class="container flex w-screen h-screen  md:left-0 justify-center items-center flex-wrap flex-col md:flex-row gap-5 ">
             <div
-              class="mx-2 flex flex-col justify-center flex-1 gap-10 h-full bg-grey">
-              <div class="flex flex-col gap-10 justify-center 
+              class="mx-2 flex flex-col justify-center flex-1 gap-10  h-1/4 md:h-full bg-grey ">
+              <div class="flex flex-col gap-10 justify-center  text-center md:text-left
               ">
                 <h2
-                  class="lg:text-[60px] lg:leading-[70px] font-headerFont text-[40px] leading-tight drop-shadow-md">
+                  class="lg:text-[60px] lg:leading-[70px] sm:text-[48px] font-headerFont text-[36px] leading-tight drop-shadow-md mt-6">
                   Nowoczesna <br>
                   aranżacja <br>
                   Twojego ogrodu </h2>
@@ -199,7 +199,7 @@
                   realizacji. Oferujemy kompleksowy zakres usług z indywidualnym
                   podejściem do każdego projektu.</p>
               </div>
-              <div class="flex items-center gap-10 flex-col md:flex-row w-full lg:w-10/12
+              <div class="flex items-center gap-4 md:gap-10 flex-col md:flex-row w-full lg:w-10/12
               flex-wrap lg:flex-nowrap">
                 <button
                   class="rounded-[200px] bg-green py-3 px-6 text-grey border border-green max-xl:w-full hover:bg-beige hover:text-green hover:scale-105 duration-300 w-full "><a
@@ -212,9 +212,9 @@
                     class="ml-2 group-hover:invert group-hover:rotate-45 "></button>
               </div>
             </div>
-            <div class="relative w-1/2"></div>
+            <div class="relative h-0 md:w-1/2"></div>
             <div
-              class="md:absolute  top-0 right-0 w-full md:w-1/2  md:h-full bg-slate-600">
+              class="md:absolute  top-0 right-0 w-full md:w-1/2  md:h-full bg-slate-600 h-1/3">
               <img src="./src/img/header-img.webp" alt="garden"
                 class="w-full h-full object-cover">
               <div class="flex absolute bottom-0 right-0  ">
@@ -226,20 +226,20 @@
             </div>
           </div>
         </div>
-
       </div>
     </header>
     <main
-      class=" mt-20 flex flex-col justify-center items-center bg-grey w-full">
+      class=" mt-20 flex flex-col text-center md:text-left justify-center items-center bg-grey w-full">
       <section
         class="mt-20 w-full flex flex-col gap-20 justify-center items-center">
         <div
-          class="container mx-auto flex flex-col gap-10  justify-center  w-7/12 font-mainFont">
+          class="container mx-auto flex flex-col gap-10  justify-center  w-11/12 md:w-7/12 font-mainFont">
           <h2 class="text-xs text-green">Oferta</h2>
-          <p class="text-5xl font-headerFont">Działamy <span
+          <p class="text-3xl md:text-5xl font-headerFont">Działamy <span
               class="italic">kompleksowo</span>
           </p>
-          <p class=" max-w-prose">Oferujemy kompletną obsługę inwestycji terenów
+          <p class="text-sm md:text-base max-w-prose">Oferujemy kompletną
+            obsługę inwestycji terenów
             zielonych.
             Projektujemy
             nowoczesne ogrody przydomowe oraz rezydencjonalne. Stworzymy dla
@@ -260,9 +260,11 @@
                   width="40px" height="40px" alt="ołówek">
               </div>
               <div class="flex flex-col gap-3 max-xl:w-full">
-                <h3 class="font-fontA text-[28px] leading-[32.2px]">Projekty
+                <h3 class="font-fontA text-2xl md:text-[28px] leading-[32.2px]">
+                  Projekty
                 </h3>
-                <p>Zaprojektujemy Twój ogród w nowoczesnym stylu i z najlepszym
+                <p class="text-sm md:text-base ">Zaprojektujemy Twój ogród w
+                  nowoczesnym stylu i z najlepszym
                   wykorzystaniem istniejącej przestrzeni.</p>
               </div>
             </div>
@@ -285,9 +287,11 @@
                   height="29px" alt="oko">
               </div>
               <div class="flex flex-col gap-3 max-xl:w-full">
-                <h3 class="font-fontA text-[28px] leading-[32.2px]">Wizualizacje
+                <h3 class="font-fontA text-2xl md:text-[28px] leading-[32.2px]">
+                  Wizualizacje
                 </h3>
-                <p>Przedstawimy Ci projekty koncepcyjne w postaci wirtualnego
+                <p class="text-sm md:text-base ">Przedstawimy Ci projekty
+                  koncepcyjne w postaci wirtualnego
                   spaceru animowanego w technologii 3D</p>
               </div>
             </div>
@@ -310,9 +314,11 @@
                   width="49px" height="29px" alt="gwiazdki">
               </div>
               <div class="flex flex-col gap-3 max-xl:w-full">
-                <h3 class="font-fontA text-[28px] leading-[32.2px]">Realizacje
+                <h3 class="font-fontA text-2xl md:text-[28px] leading-[32.2px]">
+                  Realizacje
                 </h3>
-                <p>Zrealizujemy Twoje marzenie przy użyciu najnowszych rozwiązań
+                <p class="text-sm md:text-base ">Zrealizujemy Twoje marzenie
+                  przy użyciu najnowszych rozwiązań
                   i
                   zaawansowanych technologii.</p>
               </div>
@@ -338,19 +344,19 @@
         </div>
         <div class="relative w-1/2"></div>
         <div
-          class="container mx-auto mt-10 flex flex-col gap-10  justify-center my-10 md:my-0  w-10/12 md:w-1/2 font-mainFont">
-          <h2 class="text-xs ">o firmie</h2>
-          <p class="text-5xl font-headerFont">Tworzymy z <br> <span
+          class="container mx-auto mt-10 flex flex-col gap-10  justify-center items-center md:items-start my-10 md:my-0  w-10/12 md:w-1/2 font-mainFont">
+          <h2 class="text-xs ">O firmie</h2>
+          <p class="text-3xl md:text-5xl font-headerFont">Tworzymy z <br> <span
               class="italic">pasją</span>
           </p>
-          <p class=" max-w-prose">Każdy projekt to nowe wyzwanie. Dlatego nasz
+          <p class="text-sm md:text-base max-w-prose">Każdy projekt to nowe wyzwanie. Dlatego nasz
             zespół tworzą wykwalifikowani projektanci oraz architekci, których
             zadaniem jest rozpoznanie i realizacja potrzeb każdego Klienta.
             Nasza specjalizacja to przestrzenie nowoczesne, które charakteryzuje
             minimalizm, geometria i elegancka prostota. Tworzymy ogrody
             małoobsługowe, dostosowane do współczesnego trybu życia.</p>
           <button
-            class=" flex w-1/2 mt-20 justify-center items-center rounded-[200px] py-3 px-6 text-white border border-white hover:text-green hover:scale-105 hover:bg-white duration-300 hover:border-white group"><a
+            class=" flex w-fit md:w-1/2 mt-20 justify-center items-center rounded-[200px] py-3 px-6 text-white border border-white hover:text-green hover:scale-105 hover:bg-white duration-300 hover:border-white group text-sm md:text-base"><a
               href="#realizacje">Poznaj nas bliżej</a> <img
               src="./src/img/icons/arrow-right-black.svg" alt="zjazd w dół"
               width="16px" height="16px"
@@ -363,7 +369,7 @@
         <div
           class="container mx-auto mt-10 flex flex-col gap-10  justify-start   w-10/12 font-mainFont">
           <h2 class="text-xs text-green">Realizacje</h2>
-          <p class="text-5xl font-headerFont">Nasze <span
+          <p class="text-3xl md:text-5xl  font-headerFont">Nasze <span
               class="italic">projekty</span>
           </p>
         </div>
@@ -449,7 +455,7 @@
           <div
             class="absolute bottom-0 left-0 w-full h-[70%] z-10 gradient-mask  max-lg:bottom-18 max-lg:h-[70%]">
             <button id="load-more"
-              class="flex absolute bottom-10 items-center group font-normal bg-transparent border border-black text-black pt-3 pb-3.5 px-6 rounded-[200px] hover:bg-black hover:border hover:text-white duration-500 gap-2 justify-center">
+              class="flex absolute bottom-10 items-center group font-normal bg-transparent border border-black text-black pt-3 pb-3.5 px-6 rounded-[200px] hover:bg-black hover:border hover:text-white duration-500 gap-2 justify-center text-sm md:text-base">
               <span class="show">Rozwiń</span>
               <span class="hide hidden">Zwiń</span>
               <img src="./src/img/icons/arrow-down-black.svg" width="16px"
@@ -462,9 +468,9 @@
       <section
         class="my-20 w-full flex flex-col md:flex-row justify-center items-center ">
         <div
-          class="flex flex-col mx-auto md:flex-row justify-center items-center bg-green md:w-9/12 text-grey py-20 px-10 w-full">
+          class="flex flex-col mx-auto md:flex-row justify-center items-center bg-green md:w-9/12 text-grey py-20 px-10 w-full gap-10 md:gap-1">
           <div
-            class="w-full justify-center items-center text-center md:text-left md:w-2/3 font-headerFont text-[40px] tracking-tight">
+            class="w-full justify-center items-center text-center md:text-left md:w-2/3 font-headerFont text-3xl md:text-[40px] tracking-tight">
             <p>Zostańmy w kontakcie!</p>
             <p>Znajdziesz nas na <span class="italic">Instagramie. </span> </p>
           </div>
@@ -472,7 +478,7 @@
             class="flex flex-col gap-6 w-full md:w-1/3 justify-center items-center md:justify-start md:items-start text-center md:text-left">
             <p class=" md:w-2/3">Śledź nasze najnowsze <br> realizacje!</p>
             <a href=""
-              class="rounded-[200px] w-1/3 bg-grey py-3 px-6 text-green border border-grey hover:bg-transparent hover:text-grey hover:scale-105 duration-300 text-center">Instagram</a>
+              class="rounded-[200px] w-1/3 bg-grey py-3 px-6 text-green border border-grey hover:bg-transparent hover:text-grey hover:scale-105 duration-300 text-center text-sm md:text-base">Instagram</a>
           </div>
         </div>
       </section>
@@ -481,32 +487,36 @@
       class="w-screen mt-10  bg-black text-grey flex flex-col justify-center items-center">
       <div
         class="container flex flex-col justify-center items-center w-full my-10">
-        <div class="flex justify-between items-center gap-0 w-full">
+        <div
+          class="flex flex-col md:flex-row gap-10 justify-between items-center md:gap-0 w-full">
           <div class="">
             <img src="./src/img/icons/giarddesign-white.svg" alt="">
           </div>
-          <div class="flex gap-10 justify-center items-center">
+          <div
+            class="flex flex-col md:flex-row gap-10 justify-center items-center">
             <p class="w-fit">Daj znać, co możemy dla Ciebie zrobić!</p>
             <a href=""
-              class="rounded-[200px] w-fit bg-green py-2 px-4 text-grey border border-green hover:bg-transparent hover:text-grey hover:scale-105 duration-300">Skontaktuj
+              class="rounded-[200px] w-fit bg-green py-2 px-4 text-grey border border-green hover:bg-transparent hover:text-grey hover:scale-105 duration-300 text-sm md:text-base">Skontaktuj
               się z nami!</a>
           </div>
         </div>
-        <div class="h-[1px] w-full bg-grey my-20"></div>
-        <div class="flex justify-between w-full">
-          <div class="flex gap-12">
-            <a href="">Kontakt</a>
-            <a href="">Instagram</a>
-            <a href="">Facebook</a>
-            <a href="">LinkedIn</a>
+        <div class="h-[1px] w-full bg-grey my-10 md:my-20"></div>
+        <div
+          class="flex  gap-10 md:gap-0 md:items-center justify-between w-10/12 md:w-full">
+          <div class="flex gap-4 md:gap-12 flex-col md:flex-row">
+            <a href="" class="hover:text-green transition-colors">Kontakt</a>
+            <a href="" class="hover:text-green transition-colors">Instagram</a>
+            <a href="" class="hover:text-green transition-colors">Facebook</a>
+            <a href="" class="hover:text-green transition-colors">LinkedIn</a>
           </div>
-          <div class="flex gap-12">
-            <a href="">000 000 000</a>
-            <a href="">giarddesign@kontakt.pl</a>
+          <div class="flex gap-4 md:gap-12 flex-col md:flex-row">
+            <a href="" class="hover:text-green transition-colors">000 000 000</a>
+            <a href="" class="hover:text-green transition-colors">giarddesign@kontakt.pl</a>
           </div>
         </div>
       </div>
-      <div class="container flex justify-between items-end w-full py-20">
+      <div
+        class="container flex flex-col md:flex-row justify-between gap-4 md:gap-0 items-center md:items-end w-full py-20 opacity-60">
         <div>
           <p>Prawa zastrzeżone © <span class="footer__year">
               2022
